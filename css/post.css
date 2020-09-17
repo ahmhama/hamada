@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+::selection {
+background: #f6c0a5;
+color: #fff;
+}
+*{
+padding: 0;
+margin: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+html,
+body {
+position: relative;
+height: 100%;
+}
+body {
+font-family: 'Open Sans', sans-serif;
+font-size: 15px !important;
+line-height: 24px;
+font-weight: 300 !important;
+overflow-x: hidden!important;
+-webkit-font-smoothing: antialiased;
+color: #454545;
+background-color: #f6f6f6;
+}
+p{
+    margin-bottom: 0;
+}
+a {
+text-decoration: none !important;
+cursor: pointer !important;
+}
+
+/*********************************************/
+#slide{
+    padding:50px !important;
+    border-bottom: 1px solid #e1e1e1;
+}
+#slide .header-slide{
+    font-weight: 600;
+    font-size: 40px;
+    margin: 25px 0;
+}
+#slide .slidesection > p{
+    padding:0px 80px !important;
+    margin-bottom: 30px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 100% !important;
+    height: 560px;
+}
+.swiper-button-next ,.swiper-button-prev{
+    color: #fff !important;
+}
+
+.mlr{
+    margin-top: 25px;
+}
+/************************************/
+.portfolio-item{
+    margin: 8px 0;
+
+}
+.boldspan{
+    color: #333;
+    font-weight: 600;
+}
+.portfolio-item-link{
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color .2s ease-out;
+    -moz-transition: color .2s ease-out;
+    transition: color .2s ease-out;
+}
+.bold-info{
+    color: #333;
+    font-weight: 600;
+    padding: 0 10px 0 0;
+}
+.social-share-list{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.social-share-list ul{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-share-list ul li {
+    margin: 0 14px 3px 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+.social-share-list ul li a{
+    color: #454545;
+}
+
+a:hover .fa-twitter ,a:hover  .fa-facebook-f,a:hover .fa-linkedin-in,a:hover .fa-instagram{
+    -webkit-transition: .3s ease-in-out ;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+a:hover .fa-twitter{
+    color: #00ACEE;
+  
+}
+a:hover  .fa-facebook-f{
+    color :#4267B2
+}
+a:hover .fa-linkedin-in{
+    color:#2867B2
+}
+a:hover .fa-instagram{
+    color: #C13584;
+}
+
+/***************************************************/
+footer{
+    padding :30px 0px
+}
+footer p{
+    margin-bottom: 0rem;
+}
+.link-footer{
+    color: #242424 !important;
+    font-weight: 600;
+    -webkit-transition: .3s ease-in-out ;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.link-footer:hover{
+    color: #f6c0a5 !important;
+    
+}
+
+
+/***********************************************/
+@media (max-width: 576px) { 
+   
+    #slide .header-slide{
+        font-size: 22px;
+    }
+    #slide .slidesection > p{
+        font-size: 15px;
+        padding: 0px 10px !important;
+    }
+    .swiper-slide img{
+        height: 260px !important;
+    }
+    footer {
+        text-align: center;
+    }
+    footer p {
+        margin-bottom: 10px !important;
+    }
+    footer .phone, footer .email ,footer .address{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) { 
+   
+   
+    #slide .header-slide{
+        font-size: 28px;
+    }
+    #slide .slidesection > p{
+        font-size: 15px;
+        padding: 0px 10px !important;
+    }
+    .swiper-slide img{
+        height: 350px !important;
+    }
+    footer {
+        text-align: center;
+    }
+    footer p {
+        margin-bottom: 10px !important;
+    }
+    footer .phone, footer .email ,footer .address{
+        display: none;
+    }
+ }
+
+@media (max-width: 992px) { 
+   
+   
+    footer {
+        text-align: center;
+    }
+    footer p {
+        margin-bottom: 10px !important;
+    }
+    footer .phone, footer .email ,footer .address{
+        display: none;
+    }
+    .swiper-slide img{
+        height: 420px !important;
+    }
+ }
+
+@media (max-width: 1200px) { 
+    .swiper-slide img{
+        height: 580px !important;
+    }
+ }
